@@ -17,25 +17,26 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            overflow: hidden; /* Убираем полосу прокрутки */
+            overflow: hidden;
         }
         .bio-container {
             position: relative;
-            width: 80%; /* Сделано окно уже */
-            max-width: 600px; /* Уменьшена максимальная ширина */
-            padding: 10px;
+            width: 85%; /* Увеличена ширина */
+            max-width: 750px; /* Установлена максимальная ширина */
+            height: auto; /* Высота авто */
+            padding: 15px;
             box-sizing: border-box;
         }
         .bio-background {
             background: linear-gradient(90deg, rgba(255, 105, 180, 0.6), rgba(139, 0, 255, 0.6), rgba(65, 105, 225, 0.6), rgba(0, 191, 255, 0.6));
             background-size: 400% 400%;
             animation: gradientAnimation 6s infinite alternate ease-in-out;
-            padding: 10px; /* Уменьшен отступ */
+            padding: 10px;
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(255, 0, 255, 1), 0 0 30px rgba(255, 105, 180, 0.8);
             text-align: center;
             border: 3px solid #FF00FF;
-            background-color: rgba(255, 255, 255, 0.2); /* Прозрачность для фона */
+            background-color: rgba(255, 255, 255, 0.2); 
         }
         .bio-text {
             position: relative;
@@ -51,11 +52,12 @@
             }
         }
         h1, h2 {
-            margin: 5px 0; /* Уменьшены отступы для заголовков */
+            margin: 5px 0;
             text-shadow: 0 0 10px rgba(255, 20, 147, 1);
         }
         p {
-            margin: 3px 0; /* Уменьшены отступы для параграфов */
+            margin: 3px 0;
+            font-size: 14px; /* Меньший размер шрифта */
         }
         a {
             color: #FFD700;
@@ -74,7 +76,7 @@
         .pinged-list ol {
             padding-left: 20px;
             list-style: decimal inside;
-            margin-top: 5px; /* Уменьшено расстояние между заголовком и списком */
+            margin-top: 5px;
         }
         /* Добавление анимированной рамки для GIF */
         .bio-gif {
