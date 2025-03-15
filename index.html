@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z1OB4 Bio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Убираем полосу прокрутки */
+        }
+        .bio-container {
+            position: relative;
+            width: 90%;
+            max-width: 700px; /* Уменьшена максимальная ширина */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .bio-background {
+            background: linear-gradient(90deg, rgba(255, 105, 180, 0.6), rgba(139, 0, 255, 0.6), rgba(65, 105, 225, 0.6), rgba(0, 191, 255, 0.6));
+            background-size: 400% 400%;
+            animation: gradientAnimation 6s infinite alternate ease-in-out;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 1), 0 0 40px rgba(255, 105, 180, 0.8);
+            text-align: center;
+            border: 3px solid #FF00FF;
+            background-color: rgba(255, 255, 255, 0.2); /* Прозрачность для фона */
+        }
+        .bio-text {
+            position: relative;
+            color: white;
+            z-index: 1;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        h1, h2 {
+            margin: 5px 0; /* Уменьшены отступы для заголовков */
+            text-shadow: 0 0 10px rgba(255, 20, 147, 1);
+        }
+        p {
+            margin: 3px 0; /* Уменьшены отступы для параграфов */
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #FF69B4;
+        }
+        .pinged-list {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .pinged-list ol {
+            padding-left: 20px;
+            list-style: decimal inside;
+        }
+        /* Добавление анимированной рамки для GIF */
+        .bio-gif {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid transparent;
+            animation: frameAnimation 1.5s infinite alternate;
+        }
+
+        @keyframes frameAnimation {
+            0% {
+                border-color: #FF00FF;
+            }
+            100% {
+                border-color: #FFD700;
+            }
+        }
+
+        /* Респонсив стили для меньших экранов */
+        @media (max-width: 600px) {
+            .bio-container {
+                width: 100%;
+                padding: 10px;
+            }
+            .bio-background {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bio-container">
+        <div class="bio-background">
+            <div class="bio-text">
+                <h1>My info</h1>
+                <p><strong>Нейм:</strong> Z1OB4</p>
+                <p><strong>Возраст:</strong> 17</p>
+                <p><strong>Комьюнити:</strong> HAUDING</p>
+                <p><strong>Каста:</strong> TROLLING</p>
+                <p><strong>Деф:</strong> NO</p>
+                <h2>Друзья</h2>
+                <p>@Tvar22, @Hevroz, @Mr_SnAyPeR, @frzfrozen, @PA34LEHEH, @PE8EHAHT, @SarkneSsS, @XeoDistortion, @flexxrrx, @oeacy</p>
+                <h2>Кого пинал?</h2>
+                <div class="pinged-list">
+                    <ol>
+                        <li>@silteei</li>
+                        <li>@uncle_faidi</li>
+                        <li>@amisare777</li>
+                        <li>@XeoDistortion</li>
+                    </ol>
+                </div>
+                <p><strong>Community account:</strong> <a href="https://t.me/Z10B4">@Z10B4</a></p>
+                <p><strong>Number:</strong> +27847709558</p>
+                <p>ምርጫ አይኖርህምግሪ</p>
+                <p><strong>PRICE:</strong> <a href="https://t.me/bio_z1oba">t.me/bio_z1oba</a></p>
+
+                <!-- Вставка GIF с анимированной рамкой -->
+                <img src="your_animation.gif" alt="GIF Animation" class="bio-gif" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
